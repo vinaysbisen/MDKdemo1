@@ -1,0 +1,28 @@
+{
+    "Service": "/Demoapp/Services/SampleServiceV4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/Demoapp/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/Demoapp/Actions/Service/InitializeOfflineFailureMessage.action"
+}
